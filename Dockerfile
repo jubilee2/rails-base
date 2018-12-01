@@ -10,8 +10,6 @@ RUN apk add --no-cache --virtual build-deps build-base postgresql-dev
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-ENV RAILS_ENV production
-
 COPY Gemfile /usr/src/app/
 RUN bundle install --without development test && \
   apk del build-deps
