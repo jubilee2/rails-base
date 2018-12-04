@@ -85,4 +85,4 @@ gem "jquery-rails", "~> 4.3"
 gem "jquery-ui-rails", "~> 6.0"
 gem "toastr-rails", "~> 1.0"
 gem "bootstrap", "~> 4.0"
-gem 'font-awesome-sass', '~> 5.5.0'
+gem "font-awesome-rails", "~> 4.7"
