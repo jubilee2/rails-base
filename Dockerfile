@@ -1,4 +1,4 @@
-FROM ruby:2.6.3-alpine
+FROM ruby:2.6.3-alpine3.10
 
 RUN apk --no-cache add nodejs mysql-dev tzdata yarn build-base
 
