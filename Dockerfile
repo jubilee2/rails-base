@@ -1,6 +1,10 @@
-FROM ruby:2.6.3-alpine3.10
+FROM ruby:2.6.3
 
-RUN apk --no-cache add nodejs mysql-dev tzdata yarn build-base
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+  echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+  apt-get update && \
+  apt-get install -qq -y build-essential nodejs yarn mariadb-client tzdata --fix-missing --no-install-recommends && \
+  rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
