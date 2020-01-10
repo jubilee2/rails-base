@@ -88,6 +88,15 @@ GEM
     concurrent-ruby (1.1.5)
     connection_pool (2.2.2)
     crass (1.0.5)
+    daemons (1.3.1)
+    delayed_job (4.1.8)
+      activesupport (>= 3.0, < 6.1)
+    delayed_job_active_record (4.1.4)
+      activerecord (>= 3.0, < 6.1)
+      delayed_job (>= 3.0, < 5)
+    delayed_job_recurring (0.3.8)
+      delayed_job (>= 3.0)
+      delayed_job_active_record
     devise (4.7.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -179,6 +188,8 @@ GEM
       activerecord (>= 4.2)
       request_store (~> 1.1)
     paper_trail-association_tracking (2.0.0)
+    polyamorous (2.3.0)
+      activerecord (>= 5.0)
     public_suffix (4.0.2)
     puma (3.12.2)
     rack (2.0.8)
@@ -228,6 +239,12 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.19.0, < 2.0)
     rake (13.0.1)
+    ransack (2.3.0)
+      actionpack (>= 5.0)
+      activerecord (>= 5.0)
+      activesupport (>= 5.0)
+      i18n
+      polyamorous (= 2.3.0)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -316,6 +333,10 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
+  daemons
+  delayed_job
+  delayed_job_active_record
+  delayed_job_recurring
   devise
   devise-bootstrap-views (~> 1.0)
   devise-i18n
@@ -332,6 +353,7 @@ DEPENDENCIES
   rails-i18n
   rails_admin (~> 2.0)
   rails_admin-i18n
+  ransack
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

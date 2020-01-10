@@ -71,6 +71,8 @@ gem 'rails_admin', '~> 2.0'
 gem 'paper_trail'
 gem 'paper_trail-association_tracking'
 
+gem 'ransack'
+
 gem 'devise-i18n'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'rails-i18n'
@@ -78,3 +80,8 @@ gem 'rails_admin-i18n'
 
 gem 'mechanize'
 gem "kaminari"
+
+gem 'delayed_job'
+gem 'daemons'
+gem 'delayed_job_active_record'
+gem 'delayed_job_recurring'
