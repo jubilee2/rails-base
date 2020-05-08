@@ -67,6 +67,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'cancancan'
+gem 'amoeba'
+gem 'rails_admin_clone'
 gem 'rails_admin', '~> 2.0'
 gem 'paper_trail'
 gem 'paper_trail-association_tracking'
